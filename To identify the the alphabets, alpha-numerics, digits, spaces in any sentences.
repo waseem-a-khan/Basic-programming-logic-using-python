@@ -1,0 +1,19 @@
+#Write the python code to identify the alphabets, alpha-numerics, digits, spaces in any sentencs.
+y=input('supply your any String: ')
+alphabet=alphanumeric=digit=space=special=0
+for i in range(len(y)):
+    if(y[i].isalpha()):
+        alphabet+=1
+    elif(y[i].isalnum()):
+        alphanumeric+=1
+    elif(y[i].isdigit()):
+        digit+=1
+    elif(y[i].isspace()):
+        space+=1
+    else:
+        special+=1
+print("Total Alphabet Character is: ",alphabet)
+print("Total Alphanumeric Character is: ",alphanumeric)
+print("Total number of digit is: ",digit)
+print("Total number of Space is: ",space)
+print("Total special Character is: ",special)
