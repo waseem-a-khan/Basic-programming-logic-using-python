@@ -1,0 +1,32 @@
+class Employee:
+    
+    '''Information About the Various Employee in different Colleges'''
+    print(Employee.__doc__)
+    print("--"*30)
+    print("\n")
+    def __init__(self,ename,eid,esal,ecollg,edsg,eadd):
+        self.ename=ename
+        self.eid=eid
+        self.esal=esal
+        self.ecollg=ecollg
+        self.edsg=edsg
+        self.eadd=eadd
+    def display_info(self):
+        print("*"*30)
+        print("Name of the Employee is : ", self.ename)
+        print("Id of the Employee is : ", self.eid)
+        print("Salary of the Employee is : ", self.esal)
+        print("College to which the Employee is belogs to  : ", self.ecollg)
+        print("Designation of the Employee is : ", self.edsg)
+        print("Address of the Employee is : ", self.eadd)
+        print("*"*30)
+        print("\n")
+        
+e1=Employee("Gani",103,42000,"Amity College","Lecturar","Uttar Pradesh")
+e2=Employee("Imran",104,45000,"MAF","Asst. Professor","Andhar Pradesh")
+e3=Employee("Harun",105,47000,"DAV College","Lecturar","Hyderabad")
+e4=Employee("Dr. Kamil",106,52000,"Innovative College","Professor","Bihar")
+e1.display_info()
+e2.display_info()
+e3.display_info()
+e4.display_info()
