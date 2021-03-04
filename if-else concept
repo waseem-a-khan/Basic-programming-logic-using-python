@@ -1,0 +1,13 @@
+#To identify the exiting number is prime or not?
+def prime_number(num):
+    if num>1:
+        for i in range(2,num):
+            if(num%i==0):
+                print(num,"is not a prime number")
+                break
+        else:
+            print(num,"is a prime number ")
+    else:
+        print(num,"is not a prime number")
+y=int(input("Enter the number to check the given number is prime number or not? : "))
+z=prime_number(y)
