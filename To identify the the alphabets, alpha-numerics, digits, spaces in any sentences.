@@ -17,3 +17,17 @@ print("Total Alphanumeric Character is: ",alphanumeric)
 print("Total number of digit is: ",digit)
 print("Total number of Space is: ",space)
 print("Total special Character is: ",special)
+
+
+
+
+#To Identify the Lower, upper, capitalize case in any sentences.
+name="Maulana Azad National Urdu University"
+l=name.split()
+for x in l:
+    print(x)
+print(name.lower())    
+print(name.swapcase()) 
+print(name.upper())
+print(name.title())
+print(name.capitalize()) 
